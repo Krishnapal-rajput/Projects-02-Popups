@@ -1,44 +1,57 @@
+/* Basic styling for the body */
 body {
-  margin: 0;
-  height: 100vh;
-  background-color: #232323;
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Full viewport height */
+  background-color: #232323; /* Dark background color */
 }
+
+/* Styling for the button */
 .btn {
-  margin: 32px;
-  height: 32px;
-  border-radius: 10px;
-  color: darkblue;
-  font-weight: 700;
-  cursor: pointer;
+  margin: 32px; /* Margin around the button */
+  height: 32px; /* Fixed height */
+  border-radius: 10px; /* Rounded corners */
+  color: darkblue; /* Text color */
+  font-weight: 700; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
 }
+
+/* Styling for the popup container */
 .container {
-  width: 500px;
-  height: 300px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.9);
-  background-color: #fff;
-  border-radius: 15px;
-  position: fixed;
-  inset: 0;
-  margin: auto;
-  display: none;
-  /* transform: scale(0); */
+  width: 500px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.9); /* Shadow effect */
+  background-color: #fff; /* White background */
+  border-radius: 15px; /* Rounded corners */
+  position: fixed; /* Fixed positioning */
+  inset: 0; /* Center the container in the viewport */
+  margin: auto; /* Auto margin for centering */
+  display: none; /* Hidden by default */
+  /* transform: scale(0); /* Optional scaling effect (commented out) */
 }
+
+/* Class for showing the popup with scaling effect */
 .popup {
-  transform: scale(1);
-  transition: all 0.5s ease-in-out;
+  transform: scale(1); /* Scale up to original size */
+  transition: all 0.5s ease-in-out; /* Smooth transition */
 }
+
+/* Class for hiding the popup with scaling effect */
 .out {
-  transform: scale(0);
-  transition: all.5s ease-in-out;
+  transform: scale(0); /* Scale down to zero */
+  transition: all 0.5s ease-in-out; /* Smooth transition */
 }
+
+/* Styling for the close button (×) */
 span {
-  position: absolute;
-  right: 32px;
-  font-size: 48px;
-  font-weight: 700;
-  cursor: pointer;
+  position: absolute; /* Position relative to the container */
+  right: 32px; /* Align to the right */
+  font-size: 48px; /* Large font size */
+  font-weight: 700; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
 }
+
+/* Styling for the content inside the popup */
 .hero-container {
-  margin: 32px;
-  padding-top: 24px;
+  margin: 32px; /* Margin around the content */
+  padding-top: 24px; /* Padding at the top */
 }
