@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #232323;
+}
+.btn {
+  margin: 32px;
+  height: 32px;
+  border-radius: 10px;
+  color: darkblue;
+  font-weight: 700;
+  cursor: pointer;
+}
+.container {
+  width: 500px;
+  height: 300px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.9);
+  background-color: #fff;
+  border-radius: 15px;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  display: none;
+  /* transform: scale(0); */
+}
+.popup {
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+.out {
+  transform: scale(0);
+  transition: all.5s ease-in-out;
+}
+span {
+  position: absolute;
+  right: 32px;
+  font-size: 48px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.hero-container {
+  margin: 32px;
+  padding-top: 24px;
+}
